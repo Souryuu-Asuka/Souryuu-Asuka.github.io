@@ -1,3 +1,4 @@
 # Souryuu Asuka
 
-A simple homepage without anything.
+A README file that does nothing :P
+
