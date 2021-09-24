@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>gen map</h1>
+
+    <button type="button" onclick="document.getElementById('demomap').innerHTML = genmap()">
+        Click me to generate map</button>
+
+    <br><br>
+
+    <code id="demomap"></code>
+
+</body>
+
+<script>
+    function getRandomInt() {
+        return Math.ceil(Math.random() * 6);
+    }
+
+    function genmap() {
+        return [...Array(81).keys()].map(x => {
+            return [...Array(9).keys()].map(x => { return String(getRandomInt()) }).join('&#9;')
+        }).join('<br>');
+    }
+</script>
+
+</html>
